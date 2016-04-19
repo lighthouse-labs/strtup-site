@@ -1,0 +1,229 @@
+body {
+	font-family: Open Sans, Helvetica, sans-serif;
+	margin: 0;
+}
+
+/* MIN.CSS MINIMAL RESPONSIVE FRAMEWORK */
+
+.row {
+  margin: 1% 0;
+  overflow: auto;
+  /* required - without this, the page layout is screwed up */
+}
+.col {
+  float: left;
+  box-sizing: border-box;
+}
+.table, .one {
+  width: 100%;
+}
+.eleven.twelfths {
+  width: 91.66%;
+}
+.ten.twelfths, .five.sixths {
+  width: 83.33%;
+}
+.three.quarters, .six.eighths, .nine.twelfths {
+  width: 75%;
+}
+.two.thirds, .four.sixths, .eight.twelfths {
+  width: 66.66%;
+}
+.seven.twelfths {
+  width: 58.33%;
+}
+.one.half, .six.twelfths, .two.halves, .three.sixths, .two.quarters {
+  width: 50%;
+}
+.five.twelfths {
+  width: 41.66%;
+}
+.one.third, .four.twelfths {
+  width: 33.33%;
+}
+.one.quarter, .three.twelfths {
+  width: 25%;
+}
+.one.sixth, .two.twelfths {
+  width: 16.66%;
+}
+.one.twelfth {
+  width: 8.33%;
+}
+/* For smaller screens, change all columns to 100% width */
+@media (max-width: 870px) {
+  .row .col {
+    width: 100%;
+  }
+}
+
+/* END MIN.CSS */
+
+/* UBER STARTUP FONT PACK via Fontello.com */
+
+b {
+	font-size: 3em;
+}
+
+@font-face {
+  font-family: 'uberstartup';
+  src: url('../font/uberstartup.eot?16101543');
+  src: url('../font/uberstartup.eot?16101543#iefix') format('embedded-opentype'),
+       url('../font/uberstartup.woff?16101543') format('woff'),
+       url('../font/uberstartup.ttf?16101543') format('truetype'),
+       url('../font/uberstartup.svg?16101543#uberstartup') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'uberstartup';
+    src: url('../font/uberstartup.svg?16101543#uberstartup') format('svg');
+  }
+}
+
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "uberstartup";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.icon-users:before { content: '\e800'; } /* '' */
+.icon-cog-alt:before { content: '\e801'; } /* '' */
+.icon-docs:before { content: '\e802'; } /* '' */
+
+/* END UBER STARTUP */
+
+/* STRTUP STYLES */
+
+#nav {
+	background-color: #111;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	color: white;
+}
+
+#nav h1 {
+	margin: 5px 10px;
+}
+
+#nav a {
+	color: white;
+	text-decoration: none;
+}
+
+#nav a:hover {
+	color: #08c;
+}
+
+#hero {
+	text-align: center;
+	height: 50%;
+	font-size: 2.1em;	
+	background-size: cover;
+	background-position: center;
+	background-image: url(../img/hero.jpg);
+	width: 100%;
+	padding: 17% 0 12% 0;
+	margin: 0;
+}
+
+#hero h1 {
+	color: white;
+}
+
+.btn {
+	padding: 1% 3%;
+	border: 1px solid white;
+	color: white;
+	cursor: pointer;
+}
+
+.btn:hover {
+	color: #08c;
+	background-color: white;
+	border: 1px solid #08c;
+}
+
+#different, #another {
+	padding: 4% 0;
+}
+
+#different p, #another p {
+	width: 45%;
+	margin: 0 auto;
+	color: orange;
+	line-height: 1.8em;
+	font-size: 1.2em;
+}
+
+#three_columns {
+	background-color: black;
+	color: white;
+	margin-bottom: 0;
+}
+
+#three_columns .col {
+	text-align: center;
+	padding: 50px 50px 30px;
+}
+
+#three_columns h3 {
+	color: #08c;
+}
+
+#three_columns p {
+	text-align: left;
+	line-height: 1.8em;
+	font-size: 1.2em;
+}
+
+.blue {
+	color: #08c;
+}
+
+.orange {
+	color: orange;
+}
+
+#footer {
+	background-color: #666;
+	color: #eee;
+	margin: 0;
+	padding: 1%;
+}
